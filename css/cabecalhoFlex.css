@@ -1,0 +1,24 @@
+.cabecalhoPrincipal .container{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.cabecalhoPrincipal .cabecalhoPrincipal-nav{
+    display: flex;
+}
+
+/* mobile */
+@media screen and (max-width: 768px){
+    .cabecalhoPrincipal .container{
+        flex-direction: column;
+        align-items: initial;
+        text-align: center;
+    }
+    .cabecalhoPrincipal .cabecalhoPrincipal-nav{
+        flex-direction: column;
+    }
+    .cabecalhoPrincipal-nav-link-app{
+        order:-1;
+    }
+}
